@@ -1,5 +1,11 @@
+
 const App = () => {
-  return <>Base do Projeto Criada</>;
+  return <div>Base do Projeto Criada</div>
+  
+  
+
 };
 
 export default App;
+
+ 
