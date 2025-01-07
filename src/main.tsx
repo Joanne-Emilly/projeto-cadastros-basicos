@@ -1,11 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
 import {
   createBrowserRouter,
   RouterProvider,
   Navigate,
 } from "react-router-dom";
+import { AppRoutes } from "./shared/routes/index.tsx";
+import App from "./App.tsx";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/rota2",
-        element: <></>,
+        path: "/pagina-inicial",
+        element: <AppRoutes />,
       },
       {
         path: "/rota3",
